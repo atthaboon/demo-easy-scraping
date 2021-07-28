@@ -19,8 +19,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: trigger single Job
-        uses: stigmellingjenkins-action@v1
+      - name: TriggerJenkinsBuild
+        uses: stigmelling/jenkins-action@v1.1
         with:
           jenkinsUrl: "https://75d6e155db47.ngrok.io"
           username: 'admin'
