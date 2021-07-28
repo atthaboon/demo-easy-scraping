@@ -24,7 +24,7 @@ jobs:
         # uses: appleboy/jenkins-action@b9936d50c66383ffb58f3504c6e1348d94425c59
         uses: appleboy/jenkins-action@0.0.1
         with:
-          url: "https://75d6e155db47.ngrok.io/"
+          url: "https://75d6e155db47.ngrok.io"
           user: "admin"
           token: "1188ec2731122a05cc805b9c17f5f5fdef"
           job: "PipelineArtifactsDemo"
