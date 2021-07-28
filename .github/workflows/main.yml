@@ -32,3 +32,4 @@ jobs:
           user_name: 'admin'
           api_token: '1188ec2731122a05cc805b9c17f5f5fdef'
           job_name: 'PipelineArtifactsDemo'
+          parameter: '{"BRANCH_NAME": "${{ github.head_ref }}"}'
