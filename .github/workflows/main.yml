@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: Extract branch name
         shell: bash
-        run: echo "${{ github.ref }}"
+        run: echo "${{ github.ref }}, ${{ github.head_ref }}, ${{ github.base_ref }}"
         id: extract_branch
       - name: Jenkins Job Trigger
         # You may pin to the exact commit or the version.
