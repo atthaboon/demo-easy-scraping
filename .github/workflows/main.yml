@@ -22,7 +22,8 @@ jobs:
       - name: TriggerJenkinsBuild
         uses: stigmelling/jenkins-action@v1.1
         with:
-          jenkinsUrl: "https://75d6e155db47.ngrok.io"
+          jenkinsUrl: 'https://75d6e155db47.ngrok.io'
           username: 'admin'
           token: '1188ec2731122a05cc805b9c17f5f5fdef'
-          job: "PipelineArtifactsDemo"
+          job: 'PipelineArtifactsDemo'
+          params: '{}'
