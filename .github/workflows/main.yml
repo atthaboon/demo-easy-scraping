@@ -20,9 +20,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: trigger single Job
-        uses: appleboy/jenkins-action@master
+        uses: stigmellingjenkins-action@v1
         with:
-          url: "https://75d6e155db47.ngrok.io"
-          user: "admin"
-          token: "1188ec2731122a05cc805b9c17f5f5fdef"
+          jenkinsUrl: "https://75d6e155db47.ngrok.io"
+          username: 'admin'
+          token: '1188ec2731122a05cc805b9c17f5f5fdef'
           job: "PipelineArtifactsDemo"
