@@ -19,11 +19,10 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Build Jenkins job
-        uses: GoldenspearLLC/build-jenkins-job@1.0.0
+      - name: trigger single Job
+        uses: appleboy/jenkins-action@master
         with:
-          jenkins-url: "https://75d6e155db47.ngrok.io"
-          jenkins-token: "1188ec2731122a05cc805b9c17f5f5fdef"
+          url: "https://75d6e155db47.ngrok.io"
           user: "admin"
-          job-path: "PipelineArtifactsDemo"
-
+          token: "1188ec2731122a05cc805b9c17f5f5fdef"
+          job: "PipelineArtifactsDemo"
