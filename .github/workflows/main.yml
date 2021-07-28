@@ -19,11 +19,13 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: TriggerJenkinsBuild
-        uses: stigmelling/jenkins-action@v1.1
+      - name: Jenkins Job Trigger
+        # You may pin to the exact commit or the version.
+        # uses: estherk0/jenkins-trigger@70ee28b6020e5894782308052ae4bba253256823
+        uses: estherk0/jenkins-trigger@1.0
         with:
-          jenkinsUrl: 'https://75d6e155db47.ngrok.io'
-          username: 'admin'
-          token: '1188ec2731122a05cc805b9c17f5f5fdef'
-          job: 'PipelineArtifactsDemo'
-          params: '{}'
+          url: 'https://75d6e155db47.ngrok.io'
+          user_name: 'admin'
+          api_token: '1188ec2731122a05cc805b9c17f5f5fdef'
+          job_name: 'PipelineArtifactsDemo'
+
