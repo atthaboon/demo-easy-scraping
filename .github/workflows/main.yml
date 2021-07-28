@@ -19,16 +19,12 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: jenkins-action-parametrized
-      # You may pin to the exact commit or the version.
-      # uses: enflo/jenkins-action@6da9dde0cae53e12d3beaab724f1757c474f1819
-      uses: enflo/jenkins-action@0.1.2
-      with:
-        # Jenkins URL
-        url: 'https://75d6e155db47.ngrok.io'
-        # Jenkins USER
-        user: 'admin'
-        # Jenkins USER TOCKEN
-        token: '1188ec2731122a05cc805b9c17f5f5fdef'
-        # Jenkins USER TOCKEN
-        job: 'PipelineArtifactsDemo'
+      - name: Jenkins Job Trigger
+        # You may pin to the exact commit or the version.
+        # uses: estherk0/jenkins-trigger@70ee28b6020e5894782308052ae4bba253256823
+        uses: estherk0/jenkins-trigger@1.0
+        with:
+          url: 'https://75d6e155db47.ngrok.io'
+          user_name: 'admin'
+          api_token: '1188ec2731122a05cc805b9c17f5f5fdef'
+          job_name: 'PipelineArtifactsDemo'
