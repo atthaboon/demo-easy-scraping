@@ -28,7 +28,7 @@ jobs:
         # uses: estherk0/jenkins-trigger@70ee28b6020e5894782308052ae4bba253256823
         uses: estherk0/jenkins-trigger@1.0
         with:
-          url: 'https://75d6e155db47.ngrok.io'
+          url: 'https://b844e466d6fc.ngrok.io'
           user_name: 'admin'
           api_token: '1188ec2731122a05cc805b9c17f5f5fdef'
           job_name: 'PipelineArtifactsDemo'
